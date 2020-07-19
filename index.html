@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criptomonedas </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="ml3 text-center mt-4">Cotizá Criptomonedas al Instante</h1>
+    <div class="container contenido-principal">
+
+        <div class="row justify-content-center">
+            <form class="col-10 col-md-8" id="formulario">
+                <div class="formulario-cotizar row">
+                    <div class="form-group col-12 col-md-4">
+                        <select id="moneda" class="form-control mt-2">
+                            <option value="" disabled selected>Elige tu Moneda </option>
+                            <option value="USD">Dolar Estadounidense</option>
+                            <option value="ARS">Peso Argentino</option>
+                            <option value="GBP">Libras</option>
+                            <option value="EUR">Euros</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <select id="criptomoneda" class="form-control mt-2">
+                            <option value="" disabled selected>Elige Criptomoneda</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <input type="submit" class="btn aqua-gradient text-white font-weight-bold" value="Cotizar">
+                    </div>
+                </div>
+                <!--.formulario-cotizar-->
+
+                <div class="panel-resultados row justify-content-center mt-5">
+                    <div class="contenido-spinner">
+                        <div class="spinner">
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+                    </div>
+                    <div class="mensajes col-12"></div>
+                    <div id="resultado" class="col-12"></div>
+                </div>
+                <!--panel-resultados-->
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/ml3.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
